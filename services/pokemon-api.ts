@@ -40,4 +40,26 @@ export const pokemonApi = {
         const parts = url.split("/").filter(Boolean);
         return parseInt(parts[parts.length - 1]);
     },
+
+    // Buscar todos os Pokémon de um tipo específico
+    async getPokemonsByType(type: string) {
+        const response = await fetch(`${BASE_URL}/type/${type}`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch pokemons of type: ${type}`);
+        }
+        const data = await response.json();
+        return data.pokemon.map((p: any) => ({
+            name: p.pokemon.name,
+            url: p.pokemon.url,
+        }));
+    },
+
+    // Buscar todos os Pokémon (até 1000)
+    async getAllPokemons() {
+        const response = await fetch(`${BASE_URL}/pokemon?limit=1000&offset=0`);
+        if (!response.ok) {
+            throw new Error("Failed to fetch all pokemons");
+        }
+        return response.json();
+    },
 };

@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
         marginBottom: 16,
         overflow: "hidden",
         elevation: 5,
-        shadowColor: "#ad0",
-        shadowOffset: { width: 0, height: 3 },
-        shadowOpacity: 0.2,
+        shadowColor: "#d08",
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.1,
         shadowRadius: 5,
     },
     pressed: {
@@ -65,18 +65,18 @@ const styles = StyleSheet.create({
         position: "relative",
     },
     info: {
-        backgroundColor: "rgba(40, 40, 40, 1)",
+        
         padding: 6,
         alignItems: "center",
     },
     id: {
-        fontSize: 12,
+        fontSize: 14,
         opacity: 0.6,
         marginBottom: 6,
     },
     name: {
         fontSize: 16,
-        fontWeight: "600",
+        fontWeight: "700",
         textTransform: "capitalize",
     },
 });
