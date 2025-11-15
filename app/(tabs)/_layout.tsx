@@ -26,7 +26,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Buscar',
+          title: 'Buscar na pokédex',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="l.circle.fill" color={color} />,
         }}
       />

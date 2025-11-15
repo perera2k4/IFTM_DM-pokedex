@@ -1,91 +1,79 @@
 import { Image } from "expo-image";
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 import { HelloWave } from "@/components/hello-wave";
 import ParallaxScrollView from "@/components/parallax-scroll-view";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
-import { Link } from "expo-router";
 
 export default function HomeScreen() {
     return (
         <ParallaxScrollView
-            headerBackgroundImage={require("@/assets/images/background-card.png")}
+            headerBackgroundImage={require("@/assets/images/background-index.png")}
             headerImage={
                 <Image
-                    source={require("@/assets/images/splash.png")}
-                    style={styles.reactLogo}
+                    source={require("@/assets/images/pokeball.png")}
+                    style={styles.imageCenter}
                 />
             }
         >
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Welcome!</ThemedText>
+                <ThemedText type="title">Bem-vindo!</ThemedText>
                 <HelloWave />
             </ThemedView>
-            <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+            <ThemedView>
+                <ThemedText type="subtitle">Como usar o aplicativo?</ThemedText>
                 <ThemedText>
-                    Edit{" "}
-                    <ThemedText type="defaultSemiBold">
-                        app/(tabs)/index.tsx
-                    </ThemedText>{" "}
-                    to see changes. Press{" "}
-                    <ThemedText type="defaultSemiBold">
-                        {Platform.select({
-                            ios: "cmd + d",
-                            android: "cmd + m",
-                            web: "F12",
-                        })}
-                    </ThemedText>{" "}
-                    to open developer tools.
+                    Siga o passo a passo abaixo caso tenha dúvidas
                 </ThemedText>
             </ThemedView>
-            <ThemedView style={styles.stepContainer}>
-                <Link href="/modal">
-                    <Link.Trigger>
-                        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-                    </Link.Trigger>
-                    <Link.Preview />
-                    <Link.Menu>
-                        <Link.MenuAction
-                            title="Action"
-                            icon="cube"
-                            onPress={() => alert("Action pressed")}
-                        />
-                        <Link.MenuAction
-                            title="Share"
-                            icon="square.and.arrow.up"
-                            onPress={() => alert("Share pressed")}
-                        />
-                        <Link.Menu title="More" icon="ellipsis">
-                            <Link.MenuAction
-                                title="Delete"
-                                icon="trash"
-                                destructive
-                                onPress={() => alert("Delete pressed")}
-                            />
-                        </Link.Menu>
-                    </Link.Menu>
-                </Link>
 
-                <ThemedText>
-                    {`Tap the Explore tab to learn more about what's included in this starter app.`}
+            <ThemedView style={styles.stepContainer}>
+                <ThemedText type="subtitle">Passo 1:</ThemedText>
+                <ThemedView>
+                    <ThemedText style={styles.textContainer}>
+                        Caso queira consultar a pokédex ou procurar um pokémon
+                        específico, clique em:
+                    </ThemedText>
+                    <Image
+                        source={require("@/assets/images/botao-pesquisar.gif")}
+                        style={{height:125}}
+                    />
+                </ThemedView>
+
+                <ThemedView>
+                    <ThemedText style={styles.textContainer}>Na pokédex, você pode acessar a barra de pesquisa para procurar um pokémon ou tipo(s) de pokémon específicos.</ThemedText>
+                    <Image
+                        source={require("@/assets/images/barra-de-pesquisa.gif")}
+                        style={{height: 200}}
+                    />
+                </ThemedView>
+            </ThemedView>
+
+            <ThemedView style={styles.stepContainer}>
+                <ThemedText type="subtitle">Passo 2:</ThemedText>
+                <ThemedText style={styles.textContainer}>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aperiam pariatur qui iste odit excepturi fuga dolores,
+                    ratione placeat magni praesentium quis, quas inventore minus
+                    necessitatibus recusandae tempora nobis voluptate.
+                    Voluptatibus fuga, mollitia consequatur ratione reiciendis,
+                    totam minima quidem delectus quae commodi hic temporibus!
+                    Blanditiis dicta repudiandae exercitationem maxime sit
+                    itaque.
                 </ThemedText>
             </ThemedView>
+
             <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">
-                    Step 3: Get a fresh start
-                </ThemedText>
-                <ThemedText>
-                    {`When you're ready, run `}
-                    <ThemedText type="defaultSemiBold">
-                        npm run reset-project
-                    </ThemedText>{" "}
-                    to get a fresh{" "}
-                    <ThemedText type="defaultSemiBold">app</ThemedText>{" "}
-                    directory. This will move the current{" "}
-                    <ThemedText type="defaultSemiBold">app</ThemedText> to{" "}
-                    <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+                <ThemedText type="subtitle">Passo 3:</ThemedText>
+                <ThemedText style={styles.textContainer}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus blanditiis libero ex nihil repudiandae eos
+                    repellat. Enim praesentium distinctio magnam iure laborum
+                    voluptate aut, illo magni dolorem. Iste accusantium enim
+                    ratione quas. Quibusdam officia consequatur a vel!
+                    Asperiores error incidunt nihil minima mollitia saepe quis
+                    in dolores, magnam officia? Rerum!
                 </ThemedText>
             </ThemedView>
         </ParallaxScrollView>
@@ -102,10 +90,14 @@ const styles = StyleSheet.create({
         gap: 8,
         marginBottom: 8,
     },
-    reactLogo: {
+    imageCenter: {
         height: 150,
         width: 150,
         position: "relative",
         top: 75,
+    },
+    textContainer: {
+        textAlign: "justify",
+        paddingVertical: 8,
     },
 });
