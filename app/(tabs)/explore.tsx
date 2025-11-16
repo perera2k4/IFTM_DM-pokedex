@@ -28,7 +28,7 @@ export default function ExploreScreen() {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
     const [searchModalVisible, setSearchModalVisible] = useState(false);
-    const LIMIT = 20;
+    const LIMIT = 100;
 
     const POKEMON_TYPES = [
         "normal",
@@ -222,7 +222,7 @@ export default function ExploreScreen() {
                                 Pokédex
                             </ThemedText>
                             <ThemedText style={styles.subtitle}>
-                                Encontre todos os Pokémon
+                                Encontre todos os Pokémons
                             </ThemedText>
                         </ThemedView>
 
@@ -319,7 +319,7 @@ export default function ExploreScreen() {
                         style={styles.clearButton}
                     >
                         <ThemedText style={styles.clearButtonText}>
-                            Limpar Filtros ({pokemons.length} resultados)
+                            Limpar filtros ({pokemons.length} resultados)
                         </ThemedText>
                     </Pressable>
                 )}
@@ -346,7 +346,10 @@ export default function ExploreScreen() {
                             />
                         );
                     }}
-                    keyExtractor={(item) => item.name}
+                    keyExtractor={(item, index) => {
+                        const id = pokemonApi.getPokemonIdFromUrl(item.url);
+                        return `pokemon-${id}-${item.name}`;
+                    }}
                     numColumns={2}
                     columnWrapperStyle={styles.row}
                     contentContainerStyle={styles.list}

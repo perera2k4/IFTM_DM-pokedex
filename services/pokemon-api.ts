@@ -5,14 +5,14 @@ const BASE_URL = "https://pokeapi.co/api/v2";
 export const pokemonApi = {
     // Buscar lista de Pokémon com paginação
     async getPokemons(
-        limit: number = 20,
+        limit: number = 100,
         offset: number = 0
     ): Promise<PokemonListResponse> {
         const response = await fetch(
             `${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`
         );
         if (!response.ok) {
-            throw new Error("Failed to fetch pokemon list");
+            throw new Error("Erro ao buscar a lista de Pokémon");
         }
         return response.json();
     },
@@ -21,16 +21,7 @@ export const pokemonApi = {
     async getPokemonByName(name: string): Promise<Pokemon> {
         const response = await fetch(`${BASE_URL}/pokemon/${name}`);
         if (!response.ok) {
-            throw new Error(`Failed to fetch pokemon: ${name}`);
-        }
-        return response.json();
-    },
-
-    // Buscar Pokémon por ID
-    async getPokemonById(id: number): Promise<Pokemon> {
-        const response = await fetch(`${BASE_URL}/pokemon/${id}`);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch pokemon with id: ${id}`);
+            throw new Error(`Erro ao buscar o pokémon: ${name}`);
         }
         return response.json();
     },
@@ -45,7 +36,7 @@ export const pokemonApi = {
     async getPokemonsByType(type: string) {
         const response = await fetch(`${BASE_URL}/type/${type}`);
         if (!response.ok) {
-            throw new Error(`Failed to fetch pokemons of type: ${type}`);
+            throw new Error(`Erro ao buscar pokémons do tipo: ${type}`);
         }
         const data = await response.json();
         return data.pokemon.map((p: any) => ({
@@ -58,7 +49,7 @@ export const pokemonApi = {
     async getAllPokemons() {
         const response = await fetch(`${BASE_URL}/pokemon?limit=1000&offset=0`);
         if (!response.ok) {
-            throw new Error("Failed to fetch all pokemons");
+            throw new Error("Erro ao buscar todos os pokémons");
         }
         return response.json();
     },

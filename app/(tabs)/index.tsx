@@ -21,61 +21,50 @@ export default function HomeScreen() {
                 <ThemedText type="title">Bem-vindo!</ThemedText>
                 <HelloWave />
             </ThemedView>
+            
             <ThemedView>
                 <ThemedText type="subtitle">Como usar o aplicativo?</ThemedText>
                 <ThemedText>
-                    Siga o passo a passo abaixo caso tenha dúvidas
+                    Siga o leia a demonstração abaixo caso tenha dúvidas
                 </ThemedText>
             </ThemedView>
 
             <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">Passo 1:</ThemedText>
-                <ThemedView>
+                
+                <ThemedView style={styles.viewSeparator}>
                     <ThemedText style={styles.textContainer}>
                         Caso queira consultar a pokédex ou procurar um pokémon
                         específico, clique em:
                     </ThemedText>
                     <Image
-                        source={require("@/assets/images/botao-pesquisar.gif")}
-                        style={{height:125}}
+                        source={require("@/assets/images/buscar-pokemon.png")}
+                        style={{height:125, borderRadius: 28}}
+                    />
+                </ThemedView>
+
+                <ThemedView style={styles.viewSeparator}>
+                    <ThemedText style={styles.textContainer}>Na pokédex, você pode acessar a barra de pesquisa para procurar um pokémon ou tipo(s) de pokémon específicos.</ThemedText>
+                    <Image
+                        source={require("@/assets/images/filtrar-pokemon.png")}
+                        style={{height: 200, borderRadius: 28, marginBottom: 8}}
+                    />
+                    <Image
+                        source={require("@/assets/images/pesquisar-nome.png")}
+                        style={{height: 400, borderRadius: 28}}
                     />
                 </ThemedView>
 
                 <ThemedView>
-                    <ThemedText style={styles.textContainer}>Na pokédex, você pode acessar a barra de pesquisa para procurar um pokémon ou tipo(s) de pokémon específicos.</ThemedText>
+                    <ThemedText style={styles.textContainer}>Para retornar a página anterior basta realizar a navegação nativa do seu dispositivo, com botões ou gestos!</ThemedText>
+                    
                     <Image
-                        source={require("@/assets/images/barra-de-pesquisa.gif")}
-                        style={{height: 200}}
+                        source={require("@/assets/images/navegacao-nativa.png")}
+                        style={{height: 275, borderRadius: 28}}
                     />
                 </ThemedView>
             </ThemedView>
 
-            <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">Passo 2:</ThemedText>
-                <ThemedText style={styles.textContainer}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Aperiam pariatur qui iste odit excepturi fuga dolores,
-                    ratione placeat magni praesentium quis, quas inventore minus
-                    necessitatibus recusandae tempora nobis voluptate.
-                    Voluptatibus fuga, mollitia consequatur ratione reiciendis,
-                    totam minima quidem delectus quae commodi hic temporibus!
-                    Blanditiis dicta repudiandae exercitationem maxime sit
-                    itaque.
-                </ThemedText>
-            </ThemedView>
-
-            <ThemedView style={styles.stepContainer}>
-                <ThemedText type="subtitle">Passo 3:</ThemedText>
-                <ThemedText style={styles.textContainer}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus blanditiis libero ex nihil repudiandae eos
-                    repellat. Enim praesentium distinctio magnam iure laborum
-                    voluptate aut, illo magni dolorem. Iste accusantium enim
-                    ratione quas. Quibusdam officia consequatur a vel!
-                    Asperiores error incidunt nihil minima mollitia saepe quis
-                    in dolores, magnam officia? Rerum!
-                </ThemedText>
-            </ThemedView>
+            
         </ParallaxScrollView>
     );
 }
@@ -85,6 +74,11 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         gap: 8,
+    },
+    viewSeparator: {
+        paddingBottom: 12,
+        borderBottomWidth: 1,
+        borderColor: "#333",
     },
     stepContainer: {
         gap: 8,
