@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
         position: "relative",
     },
     info: {
-        
         padding: 6,
         alignItems: "center",
     },

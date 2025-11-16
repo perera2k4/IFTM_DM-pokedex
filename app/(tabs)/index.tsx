@@ -21,7 +21,7 @@ export default function HomeScreen() {
                 <ThemedText type="title">Bem-vindo!</ThemedText>
                 <HelloWave />
             </ThemedView>
-            
+
             <ThemedView>
                 <ThemedText type="subtitle">Como usar o aplicativo?</ThemedText>
                 <ThemedText>
@@ -30,7 +30,6 @@ export default function HomeScreen() {
             </ThemedView>
 
             <ThemedView style={styles.stepContainer}>
-                
                 <ThemedView style={styles.viewSeparator}>
                     <ThemedText style={styles.textContainer}>
                         Caso queira consultar a pokédex ou procurar um pokémon
@@ -38,33 +37,42 @@ export default function HomeScreen() {
                     </ThemedText>
                     <Image
                         source={require("@/assets/images/buscar-pokemon.png")}
-                        style={{height:125, borderRadius: 28}}
+                        style={{ height: 125, borderRadius: 28 }}
                     />
                 </ThemedView>
 
                 <ThemedView style={styles.viewSeparator}>
-                    <ThemedText style={styles.textContainer}>Na pokédex, você pode acessar a barra de pesquisa para procurar um pokémon ou tipo(s) de pokémon específicos.</ThemedText>
+                    <ThemedText style={styles.textContainer}>
+                        Na pokédex, você pode acessar a barra de pesquisa para
+                        procurar um pokémon ou tipo(s) de pokémon específicos.
+                    </ThemedText>
                     <Image
                         source={require("@/assets/images/filtrar-pokemon.png")}
-                        style={{height: 200, borderRadius: 28, marginBottom: 8}}
+                        style={{
+                            height: 200,
+                            borderRadius: 28,
+                            marginBottom: 8,
+                        }}
                     />
                     <Image
                         source={require("@/assets/images/pesquisar-nome.png")}
-                        style={{height: 400, borderRadius: 28}}
+                        style={{ height: 400, borderRadius: 28 }}
                     />
                 </ThemedView>
 
                 <ThemedView>
-                    <ThemedText style={styles.textContainer}>Para retornar a página anterior basta realizar a navegação nativa do seu dispositivo, com botões ou gestos!</ThemedText>
-                    
+                    <ThemedText style={styles.textContainer}>
+                        Para retornar a página anterior basta realizar a
+                        navegação nativa do seu dispositivo, com botões ou
+                        gestos!
+                    </ThemedText>
+
                     <Image
                         source={require("@/assets/images/navegacao-nativa.png")}
-                        style={{height: 275, borderRadius: 28}}
+                        style={{ height: 275, borderRadius: 28 }}
                     />
                 </ThemedView>
             </ThemedView>
-
-            
         </ParallaxScrollView>
     );
 }
