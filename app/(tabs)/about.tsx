@@ -62,7 +62,7 @@ export default function HomeScreen() {
                     programação para Dispositivos Móveis, caso queria acessar o
                     código fonte pode acessar o código no GitHub, no link:{" "}
                     <ExternalLink
-                        href={"https://google.com"}
+                        href={"https://github.com/perera2k4/IFTM_DM-pokedex"}
                         style={{ color: "#007AFF" }}
                     >
                         https://github.com/perera2k4/IFTM_DM-pokedex

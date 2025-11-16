@@ -25,7 +25,7 @@ export default function HomeScreen() {
             <ThemedView>
                 <ThemedText type="subtitle">Como usar o aplicativo?</ThemedText>
                 <ThemedText>
-                    Siga o leia a demonstração abaixo caso tenha dúvidas
+                    Leia a demonstração abaixo caso tenha dúvidas
                 </ThemedText>
             </ThemedView>
 

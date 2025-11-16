@@ -27,11 +27,15 @@ A **Pokédex Mobile** é um aplicativo desenvolvido como trabalho prático da di
 
 Clique no botão abaixo para baixar o APK compilado e instalar diretamente no seu Android:
 
-[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/7599984c-76a6-4901-b1b3-0ed53041bedf)
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e)
 
 **Ou acesse diretamente:**
 ```
-https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/7599984c-76a6-4901-b1b3-0ed53041bedf
+https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e
+```
+**Também disponível direto no .apk do repositório:**
+```
+https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e
 ```
 
 ### 📋 Requisitos para Instalação
@@ -160,6 +164,9 @@ IFTM_DM-pokedex/
 - Clique em qualquer Pokémon
 - Veja todas as informações: tipos, stats, habilidades
 - Use o botão de **voltar** ← para retornar
+
+### 🛜 Demonstração de uso
+<img src="https://i.imgur.com/O93NqQE.gif" alt="Logo da Instituição" width="450"/>
 
 ## 📊 API Utilizada
 
