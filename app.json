@@ -4,25 +4,27 @@
     "slug": "IFTM_DM-pokedex",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/splash.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "iftmdmpokedex",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "userInterfaceStyle": "automatic"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "backgroundImage": "./assets/images/splash.png"
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#DC0A2D"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.perera2k4.IFTM_DMpokedex"
+      "package": "com.perera2k4.IFTM_DMpokedex",
+      "userInterfaceStyle": "automatic"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/splash.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router",
@@ -34,6 +36,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
+            "image": "./assets/images/splash.png",
             "backgroundColor": "#000000"
           }
         }
@@ -42,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "edf32063-ab44-4c9f-88ae-8a9eddaf6b1c"
+      }
     }
   }
 }
