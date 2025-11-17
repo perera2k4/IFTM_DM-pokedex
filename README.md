@@ -60,6 +60,37 @@ https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f41
 - Expo CLI instalado globalmente
 - Expo Go (para testar no celular)
 
+
+## 🎮 Como Usar
+
+### 1️⃣ Explorar Pokémon
+- Abra a aba **Explore**
+- Role para ver mais Pokémon
+- Clique em qualquer card para ver detalhes
+
+### 2️⃣ Buscar por Nome
+- Clique na **lupa** 🔍 no canto superior direito
+- Digite o nome do Pokémon
+- A lista será filtrada em tempo real
+
+### 3️⃣ Filtrar por Tipo
+- Selecione um ou mais tipos na barra de chips
+- Combine múltiplos tipos para resultados específicos
+- Clique em **"Limpar Filtros"** para resetar
+
+### 4️⃣ Ver Detalhes
+- Clique em qualquer Pokémon
+- Veja todas as informações: tipos, stats, habilidades
+- Use o botão de **voltar** ← para retornar
+
+### 🛜 Demonstração de uso
+Tela início | Cards de todos os pokémons | Pesquisa de pokémons por nome | Filtragem por tipo(s) de pokémon | Detalhes do pokémon | Tela sobre o desenvolvedor do app
+------|------|------|------|------|------
+<img src="assets/images/screen-inicio.jpg" alt="Tela início" width="200"/> | <img src="assets/images/screen-buscar.png" alt="Cards de todos os pokémons" width="200"/> | <img src="assets/images/screen-pesquisar.png" alt="Pesquisa de pokémons por nome" width="200"/> | <img src="assets/images/screen-filtrar.png" alt="Filtragem por tipo(s) de pokémon" width="200"/> | <img src="assets/images/screen-detalhes.jpg" alt="Detalhes do pokémon" width="200"/> | <img src="assets/images/screen-sobre.png" alt="Tela sobre o desenvolvedor do app" width="200"/>
+
+
+
+
 ### Instalação
 
 ```bash
@@ -142,31 +173,6 @@ IFTM_DM-pokedex/
     ├── images/
     └── videos/
 ```
-
-## 🎮 Como Usar
-
-### 1️⃣ Explorar Pokémon
-- Abra a aba **Explore**
-- Role para ver mais Pokémon
-- Clique em qualquer card para ver detalhes
-
-### 2️⃣ Buscar por Nome
-- Clique na **lupa** 🔍 no canto superior direito
-- Digite o nome do Pokémon
-- A lista será filtrada em tempo real
-
-### 3️⃣ Filtrar por Tipo
-- Selecione um ou mais tipos na barra de chips
-- Combine múltiplos tipos para resultados específicos
-- Clique em **"Limpar Filtros"** para resetar
-
-### 4️⃣ Ver Detalhes
-- Clique em qualquer Pokémon
-- Veja todas as informações: tipos, stats, habilidades
-- Use o botão de **voltar** ← para retornar
-
-### 🛜 Demonstração de uso
-<img src="https://i.imgur.com/O93NqQE.gif" alt="Logo da Instituição" width="450"/>
 
 ## 📊 API Utilizada
 

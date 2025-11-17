@@ -52,6 +52,11 @@ export default function HomeScreen() {
                 <ThemedText type="title">Aooba bão?</ThemedText>
                 <HelloWave />
             </ThemedView>
+
+            <ThemedText style={{ textAlign: "justify" }}>
+                A aplicação suporta temas claros e escuros com cores nativas de cada dispositivos.
+            </ThemedText>
+                
             <ThemedView style={styles.stepContainer}>
                 <ThemedText type="subtitle">
                     Desenvolvido por: Bruno Pereira
