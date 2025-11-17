@@ -13,43 +13,13 @@
 
 ## 📱 Sobre o Projeto
 
-A **Pokédex Mobile** é um aplicativo desenvolvido como trabalho prático da disciplina de **Programação para Dispositivos Móveis** no IFTM. O app permite que os usuários:
+A **Pokédex Mobile** é um aplicativo desenvolvido como trabalho da disciplina de **Programação para Dispositivos Móveis** no IFTM. O app permite que os usuários:
 
 - 🔍 Pesquisar um Pokémon por nome
 - 🏷️ Filtrar um Pokémon por um ou mais tipos
 - 📊 Visualizem informações detalhadas de cada Pokémon
 - 🎨 Interagir com a interface moderna com tema claro ou escuro
 - ⚡ Experimentem animações suaves e responsivas
-
-## 📥 Download
-
-### ⬇️ Baixar APK Pronto
-
-Clique no botão abaixo para baixar o APK compilado e instalar diretamente no seu Android:
-
-[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e)
-
-**Ou acesse diretamente:**
-```
-https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e
-```
-**Também disponível direto no .apk do repositório:**
-```
-https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f411-4187-a164-fcf51819bb0e
-```
-
-### 📋 Requisitos para Instalação
-- Android 6.0 ou superior
-- Espaço livre: ~90 MB
-- Permissão para instalar apps de fontes desconhecidas
-
-### 🔧 Como Instalar
-
-1. **Baixe o APK** usando o link acima
-2. **Permita instalação** de fontes desconhecidas nas configurações do Android
-3. **Abra o arquivo** `.apk` baixado
-4. **Clique em "Instalar"**
-5. **Pronto!** O app está pronto para usar
 
 ## 🚀 Como Começar (Desenvolvimento)
 
@@ -60,6 +30,58 @@ https://expo.dev/accounts/perera2k4/projects/IFTM_DM-pokedex/builds/54ca935f-f41
 - Expo CLI instalado globalmente
 - Expo Go (para testar no celular)
 
+### Usando Expo Go
+
+1. Baixe o app **Expo Go** na Play Store ou App Store
+2. Escaneie o QR Code que aparecerá no terminal
+3. O app será carregado no seu dispositivo em tempo real
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/perera2k4/IFTM_DM-pokedex.git
+
+# Navegue até o diretório
+cd IFTM_DM-pokedex
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npx expo start --tunnel
+
+# Escaneie o QR Code com o Expo Go para testar no celular
+```
+
+## 🛠️ Tecnologias Utilizadas
+
+```json
+{
+  "Frontend": [
+    "React Native 0.81.5",
+    "Expo ~54.0.23",
+    "React 19.1.0",
+    "TypeScript"
+  ],
+  "Navegação": [
+    "Expo Router ~6.0.14",
+    "React Navigation ~7.1.8"
+  ],
+  "Animações": [
+    "React Native Reanimated ~4.1.1",
+    "React Native Gesture Handler ~2.28.0"
+  ],
+  "UI": [
+    "Expo Image ~3.0.10",
+    "Expo Symbols ~1.0.7",
+    "@expo/vector-icons ^15.0.3"
+  ],
+  "API": [
+    "PokéAPI (REST)"
+  ]
+}
+```
 
 ## 🎮 Como Usar
 
@@ -90,59 +112,6 @@ Tela início | Cards de todos os pokémons | Pesquisa de pokémons por nome | Fi
 
 
 
-
-### Instalação
-
-```bash
-# Clone o repositório
-git clone https://github.com/perera2k4/IFTM_DM-pokedex.git
-
-# Navegue até o diretório
-cd IFTM_DM-pokedex
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
-npx expo start --tunnel
-
-# Escaneie o QR Code com o Expo Go para testar no celular
-```
-
-### Usando Expo Go
-
-1. Baixe o app **Expo Go** na Play Store ou App Store
-2. Escaneie o QR Code que aparecerá no terminal
-3. O app será carregado no seu dispositivo em tempo real
-
-## 🛠️ Tecnologias Utilizadas
-
-```json
-{
-  "Frontend": [
-    "React Native 0.81.5",
-    "Expo ~54.0.23",
-    "React 19.1.0",
-    "TypeScript"
-  ],
-  "Navegação": [
-    "Expo Router ~6.0.14",
-    "React Navigation ~7.1.8"
-  ],
-  "Animações": [
-    "React Native Reanimated ~4.1.1",
-    "React Native Gesture Handler ~2.28.0"
-  ],
-  "UI": [
-    "Expo Image ~3.0.10",
-    "Expo Symbols ~1.0.7",
-    "@expo/vector-icons ^15.0.3"
-  ],
-  "API": [
-    "PokéAPI (REST)"
-  ]
-}
-```
 
 ## 📦 Estrutura do Projeto
 
