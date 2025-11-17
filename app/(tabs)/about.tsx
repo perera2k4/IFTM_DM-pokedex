@@ -54,7 +54,7 @@ export default function HomeScreen() {
             </ThemedView>
 
             <ThemedText style={{ textAlign: "justify" }}>
-                A aplicação suporta temas claros e escuros com cores nativas de cada dispositivos.
+                A aplicação suporta temas claros e escuros com cores nativas de cada dispositivo.
             </ThemedText>
                 
             <ThemedView style={styles.stepContainer}>
